@@ -1,0 +1,250 @@
+%-------------------------
+% Resume in Latex
+% Author : Abdul Kader
+% Based off of: https://github.com/getgh/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand\labelitemi{--}
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Abdul Kader Afraeim} \\ \vspace{1pt}
+    \small \href{akdr@yahoo.com}{\underline{akdr@yahoo.com}} $|$ 
+    \href{https://linkedin.com/in/afraeim}{\underline{linkedin.com/in/afraeim}} $|$
+    \href{https://github.com/getgh}{\underline{github.com/getgh}} $|$ Non-U.S. Citizen
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia State University}{Expected Dec 2026}
+      {Bachelor of Science in Computer Science | GPA: 3.8/4.0}{Atlanta, Georgia}
+    \resumeItemListStart
+        \resumeItem{Honored as a Multiple President's List and Dean’s List Recipient also awarded the Campus Atlanta Scholarship.}
+        \resumeItem{Relevant Courses: Software Engineering-CTW, Web Programming, Big Data, Data Structures,
+Operating Systems}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+% -----------EXPERIENCE-----------
+\section{Experience}
+    \resumeSubheading
+      {Georgia State University – EXLAB} {May. 2025 -- Present}
+      {Makerspace Technologist}{Atlanta, GA}
+      \resumeItemListStart
+        \resumeItem{Calibrated and maintained 3D printer systems including circuit board integration and mechanical rebuilds, sustaining operations for 20+ weekly student fabrication requests.}
+        \resumeItem{Optimized hardware workflows for reliability and throughput using structured diagnostic testing and firmware updates, reducing device failures by 40\%.}
+        \resumeItem{Engineered and deployed a custom AI chatbot using OpenAI API and webhooks, automating student advising workflows and supporting 300+ users.}
+        \resumeItem{Facilitated student-led experimentation and hands-on learning across mixed media platforms, strengthening peer collaboration and technical confidence.}
+        \resumeItem{Delivered workshop support and lab assistance with measurable improvements in student satisfaction and onboarding efficiency.}
+    \resumeItemListEnd
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart 
+      \resumeProjectHeading
+          {\textbf{PDF Analyzer} $|$ \emph{Typescript, NextJS, PostgreSQL, AWS S3, Pinecone}}{October 2024 -- December 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a responsive web interface for seamless PDF uploads and real-time interaction with ChatGPT, increasing user engagement efficiency by 45\%}
+            \resumeItem{Implemented PyPDF2 for extracting structured content from digitally formatted PDFs, streamlining data retrieval by 60\%}
+            \resumeItem{Integrated Tesseract-based Optical Character Recognition (OCR) to support scanned PDFs, expanding document compatibility by 35\%}
+            \resumeItem{Engineered cloud storage using AWS S3 for secure and scalable document handling}
+            \resumeItem{Used Pinecone for semantic indexing and retrieval, enabling fast and accurate context-aware conversations with ChatGPT}
+            \resumeItem{Leveraged OpenAI’s API to facilitate dynamic, AI-powered dialogue with uploaded documents, improving user support responsiveness by 50\%}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Used Car Price Valuation} $|$ \emph{Python}}{June 2023}
+          \resumeItemListStart
+            \resumeItem{Utilized Python and Jupyter Notebook to explore and preprocess a dataset of used car listings.}
+            \resumeItem{Implemented multiple machine learning models—including Linear Regression and Decision Trees—to predict vehicle prices based on features like mileage, brand, year, and condition.}
+            \resumeItem{Conducted exploratory data analysis to identify trends and correlations, enhancing model effectiveness.}
+            \resumeItem{Evaluated model performance using metrics like Mean Squared Error (MSE) and R² score to determine the most accurate algorithm.}
+            \resumeItem{Created a clear and reproducible workflow, including requirements and dependencies, to support future experimentation.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\section{Certification And Award}
+      \resumeItemListStart
+        \resumeItem{AWS Certified Solutions Architect - Associate (SAA-C03)}
+      \resumeItemListEnd
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+% -------------------------------------------
+
+    % \resumeSubheading
+    %   {Information Technology Support Specialist} Sep. 2018 -- Present}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Communicate with managers to set up campus computers used on campus}
+    %     \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+    %     \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    % \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+    %     \resumeItem{Developed a game in Java to test the generated dungeons}
+    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% \section{Community & Leadership}
+% \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Association for Computing Machinery}{August 2022 - Present}
+%       {Member}{Atlanta, GA}
+%       \resumeItemListStart
+%         \resumeItem{Regularly attended ACM meetings, social gatherings, and seminars featuring industry giants like Google, leveraging
+% these opportunities to establish connections with influential figures from prominent tech companies.}
+%       \resumeItemListEnd
+%       \resumeSubheading
+%       {PantherHackers}{August 2022 - Present}
+%       {Member}{Atlanta, GA}
+%       \resumeItemListStart
+%         \resumeItem{I actively participate in discussions, social gatherings, workshops, and CTF hackathons, seizing opportunities to network with influential figures from top tech companies.}
+%         \resumeItem{Secured a top 11th placement in the prestigious Truist Hackathon organized by PantherHackers at Georgia State University}
+%       \resumeItemListEnd
+% \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages}{:Python JavaScript TypeScript and C }
+     \textbf{DB}{: SQL, NoSQL, PostgreSQL}
+     \textbf{Frameworks}{: React, Nextjs} \\
+     \textbf{Familiar with}{: Git, Github Action, AWS Cloud, Docker, NumPy,  Matplotlib} 
+    }}\\
+    
+
+ \end{itemize}
+% \section{Soft Skills}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%     {Technical support, Communication skills, Team player, Written and Verbal Communication, Decision-making, Problem-solving, Critical thinking}
+%     }}\\
+
+% %-------------------------------------------
+% \end{itemize}
+\end{document}
